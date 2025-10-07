@@ -1,6 +1,22 @@
 fun main(){
-    val num1 = 28
-    val num2 = 10
-    val result = num1+num2
-    println(result)
+    var x = 28
+    val y = 10
+
+    println("x + Y = ${x + y}")
+    println("x - Y = ${x - y}")
+    println("x * Y = ${x * y}")
+    println("x * Y = ${x / y}")
+    println("x % Y = ${x % y}")
+
+    x = x + 2
+    println("x = x + 2 = ${x}")
+    x = x - 2
+    println("x = x - 2 = ${x}")
+    x = x * 2
+    println("x = x * 2 = ${x}")
+    x = x / 2
+    println("x = x / 2 = ${x}")
+    x = x % 2
+    println("x = x % 2 = ${x}")
+
 }
