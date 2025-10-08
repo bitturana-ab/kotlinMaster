@@ -12,4 +12,13 @@ fun main(){
     println()
 //    steps jump in loop
     for (i in 1..10 step 2) print(" $i")
+
+    println()
+//    if statement as checking
+    for(i in 1..10){
+//        check numbers
+        if(i in 4..9)continue
+
+        println(i)
+    }
 }
