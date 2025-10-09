@@ -10,8 +10,8 @@ fun main(){
     car2.move()
 
 //    user class defined in classes file
-    val user = User("Ancy","28")
-    val user2 = User("Sanjay","28")
+    val user = User("Ancy",25)
+    val user2 = User("Sanjay",28)
 
 }
 class Car{
