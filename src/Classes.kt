@@ -9,6 +9,16 @@ fun main(){
     println(Direction.NORTH.distance)
     println(Direction.NORTH.name)
     Direction.SOUTH.getData()
+//    when like switch case
+//    val direction = Direction.EAST
+    val direction = Direction.valueOf("south".uppercase())
+
+    when(direction){
+        Direction.EAST -> println("Direction is East")
+        Direction.WEST -> println("Direction is West")
+        Direction.NORTH -> println("Direction is North")
+        Direction.SOUTH -> println("Direction is South")
+    }
 }
 
 enum class Direction(var direction: String,var distance: Int){
