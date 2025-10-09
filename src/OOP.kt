@@ -9,6 +9,10 @@ fun main(){
     var car2 = ParamsCar("Kontessa","mini","25k")
     car2.move()
 
+//    user class defined in classes file
+    val user = User("Ancy","28")
+    val user2 = User("Sanjay","28")
+
 }
 class Car{
     var name=""
@@ -33,8 +37,8 @@ class Car{
 //}
 
 //define var in parenthesis
-class ParamsCar(val name: String,val model:String,val price:String){
-//    val name = name
+class ParamsCar( val name: String,val model:String,val price:String){
+//    val name = name.trim()
     fun move(){
         println("$name car is moving")
     }
