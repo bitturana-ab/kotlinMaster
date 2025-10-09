@@ -3,6 +3,9 @@ fun main(){
     User("Sanjay")
     User("ancy",28)
     User(age =  28)
+//    enum class
+    println(Direction.NORTH)
+    println(Direction.SOUTH)
 }
 //created object in OOP file
 //class User(name: String,var age: Int){
@@ -37,4 +40,8 @@ class User(name: String="unknown",var age: Int=20){
         }
     }
 
+}
+//enum class means fixed constant for selecting
+enum class Direction{
+    NORTH,SOUTH,EAST,WEST
 }
