@@ -23,10 +23,18 @@ class Car{
     }
 }
 //parameter constructor
-class ParamsCar(name: String,model:String,price:String){
-    val name = name
-    val model = model
-    val price = price
+//class ParamsCar(name: String,model:String,price:String){
+//    val name = name
+//    val model = model
+//    val price = price
+//    fun move(){
+//        println("$name car is moving")
+//    }
+//}
+
+//define var in parenthesis
+class ParamsCar(val name: String,val model:String,val price:String){
+//    val name = name
     fun move(){
         println("$name car is moving")
     }
