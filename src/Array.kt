@@ -15,6 +15,7 @@ fun main(){
     val index = readln()
     val indexAsInteger = index.toIntOrNull()
     val numbers = intArrayOf(28,25,10,69) + 7 // add element to array like dynamic
+    numbers[1] = 22
     if(indexAsInteger != null && indexAsInteger in 0..numbers.lastIndex){
         println("Your favourite number is : ${numbers[indexAsInteger]}")
     }
