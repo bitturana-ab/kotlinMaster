@@ -16,6 +16,9 @@ fun main(){
     println("Long min value is ${Long.MIN_VALUE}")
     println("Float min value is ${Float.MIN_VALUE}")
     println("Float max value is ${Float.MAX_VALUE}")
-
+// input by user as string in kotlin
+    println("Please enter a number:")
+    val number = readln(); // this is string
+    println("You have entered $number")
 
 }
