@@ -10,4 +10,16 @@ fun main(){
 //        check is char or not
         if (num is Char)print("$num ")
     }
+//    int array
+    println("Enter index to search number: ")
+    val index = readln()
+    val indexAsInteger = index.toIntOrNull()
+    val numbers = intArrayOf(28,25,10,69)
+    if(indexAsInteger != null && indexAsInteger in 0..numbers.lastIndex){
+        println("Your favourite number is : ${numbers[indexAsInteger]}")
+    }
+    else
+    {
+        println("That index doesn't exist")
+    }
 }
