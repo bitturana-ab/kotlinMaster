@@ -19,6 +19,8 @@ fun main(){
 // input by user as string in kotlin
     println("Please enter a number:")
     val number = readln(); // this is string
-    println("You have entered $number")
+    val intNumber = number.toInt()
+//    println("You have entered $number")
+    println("Is number even? ${intNumber % 2 == 0}")
 
 }
