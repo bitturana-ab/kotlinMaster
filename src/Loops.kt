@@ -23,16 +23,31 @@ fun main(){
     }
 
 //    while loop
+//    println("How many numbers will you enter? ")
+//    val numbers = readln().toIntOrNull() ?:0
+//    var sum = 0
+//    var i = 0
+//    while (i < numbers){
+//        println("Enter #${i+1} number: ")
+////        if not int then retry not increase chance i
+//        val number = readln().toIntOrNull() ?: continue
+//        sum += number
+//        i++
+//    }
+//    println("Sum = $sum")
+
+//    list of int from user
+
     println("How many numbers will you enter? ")
     val numbers = readln().toIntOrNull() ?:0
-    var sum = 0
+    val numbersList = mutableListOf<Int>()
     var i = 0
     while (i < numbers){
-        println("Enter #${i+1} number: ")
+        println("Enter #${i + 1} number: ")
 //        if not int then retry not increase chance i
         val number = readln().toIntOrNull() ?: continue
-        sum += number
+        numbersList.add(number)
         i++
     }
-    println("Sum = $sum")
+    println("Numbers: $numbersList")
 }
